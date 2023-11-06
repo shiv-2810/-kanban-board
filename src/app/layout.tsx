@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import { TaskProvider } from "@/context/TaskContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <TaskProvider>
       <body
         className={cn(
           "min-h-screen font-sans antialiased grainy",
@@ -27,6 +29,7 @@ export default function RootLayout({
         <Navbar />
         {children}
       </body>
+      </TaskProvider>
     </html>
   );
 }
