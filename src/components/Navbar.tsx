@@ -18,7 +18,7 @@ const Navbar = () => {
           </Link>
           <div className="hidden items-center space-x-4 sm:flex">
             <>
-                <div className="relative flex flex-col w-full flex-grow p-4">
+                <div className="relative flex flex-col w-full flex-grow p-4"> 
                   <div className="relative">
                     <Textarea
                       rows={1}
