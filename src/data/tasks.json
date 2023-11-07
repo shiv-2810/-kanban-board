@@ -1,218 +1,260 @@
 [
-    {
-      "title": "Implement Auth Module",
-      "taskType": "toDo",
-      "taskDescription": "Create an authentication module using JWT for our application."
-    },
-    {
-      "title": "Design Database Schema",
-      "taskType": "toDo",
-      "taskDescription": "Design a normalized database schema for the new CRM system."
-    },
-    {
-      "title": "Setup CI/CD Pipeline",
-      "taskType": "inProgress",
-      "taskDescription": "Configure a CI/CD pipeline for automatic deployment of the web service."
-    },
-    {
-      "title": "Code Review Session",
-      "taskType": "inProgress",
-      "taskDescription": "Conduct a code review session for the latest pull requests."
-    },
-    {
-      "title": "Prepare User Stories",
-      "taskType": "toDo",
-      "taskDescription": "Write detailed user stories for the upcoming sprint."
-    },
-    {
-      "title": "Optimize Query Performance",
-      "taskType": "inProgress",
-      "taskDescription": "Analyze and optimize SQL queries in the reporting module."
-    },
-    {
-      "title": "Refactor Payment Module",
-      "taskType": "completed",
-      "taskDescription": "Refactor the existing payment module to improve maintainability."
-    },
-    {
-      "title": "UX Review",
-      "taskType": "completed",
-      "taskDescription": "Review and enhance the user experience for the checkout process."
-    },
-    {
-      "title": "API Integration Testing",
-      "taskType": "toDo",
-      "taskDescription": "Write and execute integration tests for the REST API."
-    },
-    {
-      "title": "Frontend Theming",
-      "taskType": "inProgress",
-      "taskDescription": "Implement the new theme for the front-end based on the provided designs."
-    },
-    {
-      "title": "Implement Caching Strategy",
-      "taskType": "toDo",
-      "taskDescription": "Implement a caching strategy for the most frequently accessed data."
-    },
-    {
-      "title": "Update Security Protocols",
-      "taskType": "inProgress",
-      "taskDescription": "Update the application with the latest security protocols and measures."
-    },
-    {
-      "title": "Data Migration Plan",
-      "taskType": "toDo",
-      "taskDescription": "Plan and document the data migration steps for the new database."
-    },
-    {
-      "title": "Automate Report Generation",
-      "taskType": "completed",
-      "taskDescription": "Develop a script to automate the generation of weekly reports."
-    },
-    {
-      "title": "User Feedback Session",
-      "taskType": "toDo",
-      "taskDescription": "Conduct a user feedback session for the new features."
-    },
-    {
-      "title": "Setup Monitoring Tools",
-      "taskType": "inProgress",
-      "taskDescription": "Set up monitoring tools to track application performance metrics."
-    },
-    {
-      "title": "Mobile Responsiveness Check",
-      "taskType": "toDo",
-      "taskDescription": "Ensure that all new web pages are mobile responsive."
-    },
-    {
-      "title": "Code Merge and Conflict Resolution",
-      "taskType": "completed",
-      "taskDescription": "Merge branches and resolve any occurring conflicts in the codebase."
-    },
-    {
-      "title": "Technical Documentation",
-      "taskType": "inProgress",
-      "taskDescription": "Update the technical documentation to reflect recent changes."
-    },
-    {
-      "title": "Onboarding New Developers",
-      "taskType": "toDo",
-      "taskDescription": "Prepare materials and sessions for onboarding new team members."
-    },
-    {
-      "title": "Optimize Load Times",
-      "taskType": "inProgress",
-      "taskDescription": "Work on reducing the load times of the front-end application."
-    },
-    {
-      "title": "End-to-End Testing",
-      "taskType": "completed",
-      "taskDescription": "Create end-to-end test cases for user transaction flows."
-    },
-    {
-      "title": "Feature Brainstorming",
-      "taskType": "toDo",
-      "taskDescription": "Brainstorm potential features that can be added in the next quarter."
-    },
-    {
-      "title": "Legacy Code Assessment",
-      "taskType": "inProgress",
-      "taskDescription": "Assess legacy code for potential refactoring or rewriting."
-    },
-    {
-      "title": "Implement Localization",
-      "taskType": "completed",
-      "taskDescription": "Implement localization for multiple languages in the application."
-    },
-    {
-      "title": "Improve Logging Systems",
-      "taskType": "toDo",
-      "taskDescription": "Enhance the logging system for better traceability and debugging."
-    },
-    {
-      "title": "Cloud Infrastructure Upgrade",
-      "taskType": "inProgress",
-      "taskDescription": "Upgrade the cloud infrastructure to accommodate scaling needs."
-    },
-    {
-      "title": "Database Backup Procedures",
-      "taskType": "completed",
-      "taskDescription": "Implement automated database backup procedures."
-    },
-    {
-      "title": "Frontend Accessibility Improvements",
-      "taskType": "toDo",
-      "taskDescription": "Improve accessibility on the front-end according to WCAG guidelines."
-    },
-    {
-      "title": "Backend API Refactoring",
-      "taskType": "inProgress",
-      "taskDescription": "Refactor backend APIs for better performance and maintainability."
-    },
-    {
-      "title": "SEO Optimization",
-      "taskType": "toDo",
-      "taskDescription": "Perform SEO optimization for the company website."
-    },
-    {
-      "title": "Automated Testing Framework",
-      "taskType": "inProgress",
-      "taskDescription": "Set up an automated testing framework for the QA team."
-    },
-    {
-      "title": "Security Audit",
-      "taskType": "completed",
-      "taskDescription": "Conduct a security audit and address potential vulnerabilities."
-    },
-    {
-      "title": "Implement Feature Flags",
-      "taskType": "toDo",
-      "taskDescription": "Implement feature flags to manage feature rollouts."
-    },
-    {
-      "title": "Sales Data Analysis",
-      "taskType": "inProgress",
-      "taskDescription": "Analyze the latest sales data to identify trends and opportunities."
-    },
-    {
-      "title": "Refactor User Interface Components",
-      "taskType": "completed",
-      "taskDescription": "Refactor and standardize user interface components across the application."
-    },
-    {
-      "title": "Optimize Image Assets",
-      "taskType": "toDo",
-      "taskDescription": "Optimize image assets to improve loading times on the website."
-    },
-    {
-      "title": "Third-Party API Upgrade",
-      "taskType": "inProgress",
-      "taskDescription": "Upgrade third-party APIs to the latest versions."
-    },
-    {
-      "title": "Implement Dark Mode",
-      "taskType": "completed",
-      "taskDescription": "Implement a dark mode feature for the application interface."
-    },
-    {
-      "title": "Expand Test Coverage",
-      "taskType": "toDo",
-      "taskDescription": "Expand unit and integration test coverage for the core modules."
-    },
-    {
-      "title": "Performance Benchmarking",
-      "taskType": "inProgress",
-      "taskDescription": "Carry out performance benchmarking tests for the recent release."
-    },
-    {
-      "title": "Content Marketing Strategy",
-      "taskType": "toDo",
-      "taskDescription": "Develop a content marketing strategy for the upcoming product launch."
-    },
-    {
-      "title": "Client Onboarding Automation",
-      "taskType": "completed",
-      "taskDescription": "Automate the client onboarding process to enhance the customer experience."
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "Implement Auth Module",
+    "taskType": "toDo",
+    "taskDescription": "Create an authentication module using JWT for our application."
+  },
+  {
+    "id": "2",
+    "title": "Design Database Schema",
+    "taskType": "toDo",
+    "taskDescription": "Design a normalized database schema for the new CRM system."
+  },
+  {
+    "id": "3",
+    "title": "Setup CI/CD Pipeline",
+    "taskType": "inProgress",
+    "taskDescription": "Configure a CI/CD pipeline for automatic deployment of the web service."
+  },
+  {
+    "id": "4",
+    "title": "Code Review Session",
+    "taskType": "inProgress",
+    "taskDescription": "Conduct a code review session for the latest pull requests."
+  },
+  {
+    "id": "5",
+    "title": "Prepare User Stories",
+    "taskType": "toDo",
+    "taskDescription": "Write detailed user stories for the upcoming sprint."
+  },
+  {
+    "id": "6",
+    "title": "Optimize Query Performance",
+    "taskType": "inProgress",
+    "taskDescription": "Analyze and optimize SQL queries in the reporting module."
+  },
+  {
+    "id": "7",
+    "title": "Refactor Payment Module",
+    "taskType": "completed",
+    "taskDescription": "Refactor the existing payment module to improve maintainability."
+  },
+  {
+    "id": "8",
+    "title": "UX Review",
+    "taskType": "completed",
+    "taskDescription": "Review and enhance the user experience for the checkout process."
+  },
+  {
+    "id": "9",
+    "title": "API Integration Testing",
+    "taskType": "toDo",
+    "taskDescription": "Write and execute integration tests for the REST API."
+  },
+  {
+    "id": "10",
+    "title": "Frontend Theming",
+    "taskType": "inProgress",
+    "taskDescription": "Implement the new theme for the front-end based on the provided designs."
+  },
+  {
+    "id": "11",
+    "title": "Implement Caching Strategy",
+    "taskType": "toDo",
+    "taskDescription": "Implement a caching strategy for the most frequently accessed data."
+  },
+  {
+    "id": "12",
+    "title": "Update Security Protocols",
+    "taskType": "inProgress",
+    "taskDescription": "Update the application with the latest security protocols and measures."
+  },
+  {
+    "id": "13",
+    "title": "Data Migration Plan",
+    "taskType": "toDo",
+    "taskDescription": "Plan and document the data migration steps for the new database."
+  },
+  {
+    "id": "14",
+    "title": "Automate Report Generation",
+    "taskType": "completed",
+    "taskDescription": "Develop a script to automate the generation of weekly reports."
+  },
+  {
+    "id": "15",
+    "title": "User Feedback Session",
+    "taskType": "toDo",
+    "taskDescription": "Conduct a user feedback session for the new features."
+  },
+  {
+    "id": "16",
+    "title": "Setup Monitoring Tools",
+    "taskType": "inProgress",
+    "taskDescription": "Set up monitoring tools to track application performance metrics."
+  },
+  {
+    "id": "17",
+    "title": "Mobile Responsiveness Check",
+    "taskType": "toDo",
+    "taskDescription": "Ensure that all new web pages are mobile responsive."
+  },
+  {
+    "id": "18",
+    "title": "Code Merge and Conflict Resolution",
+    "taskType": "completed",
+    "taskDescription": "Merge branches and resolve any occurring conflicts in the codebase."
+  },
+  {
+    "id": "19",
+    "title": "Technical Documentation",
+    "taskType": "inProgress",
+    "taskDescription": "Update the technical documentation to reflect recent changes."
+  },
+  {
+    "id": "20",
+    "title": "Onboarding New Developers",
+    "taskType": "toDo",
+    "taskDescription": "Prepare materials and sessions for onboarding new team members."
+  },
+  {
+    "id": "21",
+    "title": "Optimize Load Times",
+    "taskType": "inProgress",
+    "taskDescription": "Work on reducing the load times of the front-end application."
+  },
+  {
+    "id": "22",
+    "title": "End-to-End Testing",
+    "taskType": "completed",
+    "taskDescription": "Create end-to-end test cases for user transaction flows."
+  },
+  {
+    "id": "23",
+    "title": "Feature Brainstorming",
+    "taskType": "toDo",
+    "taskDescription": "Brainstorm potential features that can be added in the next quarter."
+  },
+  {
+    "id": "24",
+    "title": "Legacy Code Assessment",
+    "taskType": "inProgress",
+    "taskDescription": "Assess legacy code for potential refactoring or rewriting."
+  },
+  {
+    "id": "25",
+    "title": "Implement Localization",
+    "taskType": "completed",
+    "taskDescription": "Implement localization for multiple languages in the application."
+  },
+  {
+    "id": "26",
+    "title": "Improve Logging Systems",
+    "taskType": "toDo",
+    "taskDescription": "Enhance the logging system for better traceability and debugging."
+  },
+  {
+    "id": "27",
+    "title": "Cloud Infrastructure Upgrade",
+    "taskType": "inProgress",
+    "taskDescription": "Upgrade the cloud infrastructure to accommodate scaling needs."
+  },
+  {
+    "id": "28",
+    "title": "Database Backup Procedures",
+    "taskType": "completed",
+    "taskDescription": "Implement automated database backup procedures."
+  },
+  {
+    "id": "29",
+    "title": "Frontend Accessibility Improvements",
+    "taskType": "toDo",
+    "taskDescription": "Improve accessibility on the front-end according to WCAG guidelines."
+  },
+  {
+    "id": "30",
+    "title": "Backend API Refactoring",
+    "taskType": "inProgress",
+    "taskDescription": "Refactor backend APIs for better performance and maintainability."
+  },
+  {
+    "id": "31",
+    "title": "SEO Optimization",
+    "taskType": "toDo",
+    "taskDescription": "Perform SEO optimization for the company website."
+  },
+  {
+    "id": "32",
+    "title": "Automated Testing Framework",
+    "taskType": "inProgress",
+    "taskDescription": "Set up an automated testing framework for the QA team."
+  },
+  {
+    "id": "33",
+    "title": "Security Audit",
+    "taskType": "completed",
+    "taskDescription": "Conduct a security audit and address potential vulnerabilities."
+  },
+  {
+    "id": "34",
+    "title": "Implement Feature Flags",
+    "taskType": "toDo",
+    "taskDescription": "Implement feature flags to manage feature rollouts."
+  },
+  {
+    "id": "35",
+    "title": "Sales Data Analysis",
+    "taskType": "inProgress",
+    "taskDescription": "Analyze the latest sales data to identify trends and opportunities."
+  },
+  {
+    "id": "36",
+    "title": "Refactor User Interface Components",
+    "taskType": "completed",
+    "taskDescription": "Refactor and standardize user interface components across the application."
+  },
+  {
+    "id": "37",
+    "title": "Optimize Image Assets",
+    "taskType": "toDo",
+    "taskDescription": "Optimize image assets to improve loading times on the website."
+  },
+  {
+    "id": "38",
+    "title": "Third-Party API Upgrade",
+    "taskType": "inProgress",
+    "taskDescription": "Upgrade third-party APIs to the latest versions."
+  },
+  {
+    "id": "39",
+    "title": "Implement Dark Mode",
+    "taskType": "completed",
+    "taskDescription": "Implement a dark mode feature for the application interface."
+  },
+  {
+    "id": "40",
+    "title": "Expand Test Coverage",
+    "taskType": "toDo",
+    "taskDescription": "Expand unit and integration test coverage for the core modules."
+  },
+  {
+    "id": "41",
+    "title": "Performance Benchmarking",
+    "taskType": "inProgress",
+    "taskDescription": "Carry out performance benchmarking tests for the recent release."
+  },
+  {
+    "id": "42",
+    "title": "Content Marketing Strategy",
+    "taskType": "toDo",
+    "taskDescription": "Develop a content marketing strategy for the upcoming product launch."
+  },
+  {
+    "id": "43",
+    "title": "Client Onboarding Automation",
+    "taskType": "completed",
+    "taskDescription": "Automate the client onboarding process to enhance the customer experience."
+  }
+]

@@ -1,6 +1,6 @@
 import { Task } from "@/models/Task";
 import { Edit } from "lucide-react";
-import { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -14,13 +14,25 @@ import {
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { TaskContext } from "@/context/TaskContext";
+import { v4 as uuidv4 } from "uuid";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 interface EditTaskProps {
   task: Task;
 }
 
 const AddTaskDialog = ({ task }: { task?: any }) => {
-  const { addTask } = useContext(TaskContext);
+  const [taskType, setTaskType] = React.useState(task?.taskType || 'toDo');
+  const [taskTypeTitle, setTaskTypeTitle] = useState("");
+  const { addTask, editTask } = useContext(TaskContext);
   const [title, setTitle] = useState<string>(task?.title || "");
   const [description, setDescription] = useState<string>(
     task?.taskDescription || ""
@@ -30,15 +42,35 @@ const AddTaskDialog = ({ task }: { task?: any }) => {
     setDescription(value);
   };
 
+  useEffect(() => {
+    if (taskType === "toDo") {
+      setTaskTypeTitle("To Do");
+    } else if (taskType === "inProgress") {
+      setTaskTypeTitle("In Progress");
+    } else {
+      setTaskTypeTitle("Completed");
+    }
+  }, [taskType]);
+
   const handleChangeTitle = (value: string) => {
     setTitle(value);
   };
 
   const saveTask = () => {
     addTask({
+      id: uuidv4(),
       title: title,
       taskDescription: description,
       taskType: "toDo",
+    });
+  };
+
+  const editTasks = () => {
+    editTask({
+      ...task,
+      title,
+      taskType,
+      taskDescription: description,
     });
   };
 
@@ -77,16 +109,33 @@ const AddTaskDialog = ({ task }: { task?: any }) => {
             className="col-span-3"
           />
         </div>
-        {/* <div className="grid grid-cols-4 items-center gap-4">
-          <Label htmlFor="username" className="text-right">
-            Task Type
-          </Label>
-          <Input id="username" value="@peduarte" className="col-span-3" />
-        </div> */}
+        <DropdownMenu>
+          <DropdownMenuTrigger className="relative" asChild>
+            <Button className="w-16 px-11 absolute bottom-5" variant="outline">
+              {taskTypeTitle}
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuRadioGroup
+              value={taskType}
+              onValueChange={setTaskType}
+            >
+              <DropdownMenuRadioItem value="toDo">To Do</DropdownMenuRadioItem>
+              <DropdownMenuRadioItem value="inProgress">
+                In Progress
+              </DropdownMenuRadioItem>
+              <DropdownMenuRadioItem value="completed">
+                Completed
+              </DropdownMenuRadioItem>
+            </DropdownMenuRadioGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <DialogFooter>
-        <Button onClick={saveTask} type="submit">
-          Save changes
+        <Button onClick={task?.title ? editTasks : saveTask} type="submit">
+          Save {task?.title && "changes"}
         </Button>
       </DialogFooter>
     </>

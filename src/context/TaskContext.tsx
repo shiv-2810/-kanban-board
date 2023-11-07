@@ -9,6 +9,7 @@ interface TaskContextProps {
   addTask: (newTask: Task) => void;
   deleteTask: (deletedTask: Task) => void;
   filterTasks: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  editTask: (editedTask: Task) => void;
 }
 
 // Create context with a default value
@@ -17,6 +18,7 @@ export const TaskContext = createContext<TaskContextProps>({
   addTask: () => {},
   deleteTask: () => {},
   filterTasks: () => {},
+  editTask: () => {},
 });
 
 // Create a provider component
@@ -35,16 +37,24 @@ export const TaskProvider = ({ children }: { children: ReactNode }) => {
 
   const filterTasks = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setTasks(
-        e?.target?.value
-          ? tasksData.filter((task) =>
-              task.title.toLowerCase().includes(e.target.value.toLowerCase())
-            )
-          : tasksData
-      );
+      e?.target?.value
+        ? tasksData.filter((task) =>
+            task.title.toLowerCase().includes(e.target.value.toLowerCase())
+          )
+        : tasksData
+    );
+  };
+
+  const editTask = (editedTask: Task): void => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) => (task.id === editedTask.id ? editedTask : task))
+    );
   };
 
   return (
-    <TaskContext.Provider value={{ tasks, addTask, deleteTask, filterTasks }}>
+    <TaskContext.Provider
+      value={{ tasks, addTask, deleteTask, filterTasks, editTask }}
+    >
       {children}
     </TaskContext.Provider>
   );
