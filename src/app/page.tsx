@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col space-y-5  items-center mt-16 md:flex-row md:space-y-0 md:items-start md:space-x-5 md:px-24">
         <div className="w-1/3 min-h-full flex flex-col">
-          <Button className="w-20 rounded-xl bg-blue-500 text-white font-bold hover:bg-blue-700 px-12">
+          <Button className="w-20 rounded-xl bg-blue-500 text-white font-bold hover:bg-blue-500 px-12">
             To Do
           </Button>
           <div className="mt-7">
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 min-h-full flex flex-col">
-          <Button className="w-20 rounded-xl bg-orange-400 text-white font-bold px-14 hover:bg-orange-600">
+          <Button className="w-20 rounded-xl bg-orange-400 text-white font-bold px-14 hover:bg-orange-400">
             In Progress
           </Button>
           <div className="mt-7">
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 min-h-full flex flex-col">
-          <Button className="w-20 rounded-xl bg-green-500 text-white font-semibold px-14">
+          <Button className="w-20 rounded-xl bg-green-500 text-white font-semibold px-14 hover:bg-green-500">
             Completed
           </Button>
           <div className="mt-7">
